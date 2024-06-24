@@ -106,6 +106,7 @@ public class LinkedList {
     }
     Node temp = head;
     head = head.getNext();
+    temp.setNext(null);
     size--;
     if (size == 0) {
       tail = null;
