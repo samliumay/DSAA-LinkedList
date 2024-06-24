@@ -6,10 +6,10 @@
 */
 public class LinkedList {
   // Reference variable for the head Node.
-  private Node head;
+  private Node first;
 
   // Reference variable for the tail Node.
-  private Node tail;
+  private Node last;
 
   // Variable to follow the size of linkedlist.
   private int size;
@@ -20,8 +20,8 @@ public class LinkedList {
   // is same when the size of list is 1. Then we set the size of linkedlist to 1.
   public LinkedList(int value) {
     Node node = new Node(value);
-    head = node;
-    tail = node;
+    first = node;
+    last = node;
     size = 1;
   }
 
@@ -31,11 +31,11 @@ public class LinkedList {
   }
 
   public Node getTail() {
-    return tail;
+    return last;
   }
 
   public Node getHead() {
-    return head;
+    return first;
   }
 
   // Function to insert a value to begining of the Linkedlist. As you can see the
@@ -44,11 +44,11 @@ public class LinkedList {
     Node newNode = new Node(value);
 
     if (size == 0) {
-      head = newNode;
-      tail = newNode;
+      first = newNode;
+      last = newNode;
     } else {
-      tail.setNext(newNode);
-      tail = newNode;
+      last.setNext(newNode);
+      last = newNode;
     }
     size++;
   }
@@ -61,8 +61,8 @@ public class LinkedList {
    * connection of the last node and change the tail of the linkedlist.
    */
   public Node removeLast() {
-    Node temp = head;
-    Node pre = head;
+    Node temp = first;
+    Node pre = first;
     if (size == 0) {
       return null;
     }
@@ -72,12 +72,12 @@ public class LinkedList {
       temp = temp.getNext();
 
     }
-    tail = pre;
+    last = pre;
     pre.setNext(null);
     size--;
     if (size == 0) {
-      head = null;
-      tail = null;
+      first = null;
+      last = null;
     }
     return temp;
   }
@@ -88,11 +88,11 @@ public class LinkedList {
     Node newNode = new Node(value);
 
     if (size == 0) {
-      newNode = head;
-      newNode = tail;
+      newNode = first;
+      newNode = last;
     } else {
-      newNode.setNext(head);
-      head = newNode;
+      newNode.setNext(first);
+      first = newNode;
     }
 
     size++;
@@ -104,12 +104,12 @@ public class LinkedList {
     if (size == 0) {
       return null;
     }
-    Node temp = head;
-    head = head.getNext();
+    Node temp = first;
+    first = first.getNext();
     temp.setNext(null);
     size--;
     if (size == 0) {
-      tail = null;
+      last = null;
     }
     return temp;
 
@@ -126,7 +126,7 @@ public class LinkedList {
       return null;
     }
 
-    Node temp = head;
+    Node temp = first;
     for (int i = 0; index > i; i++) {
       temp = temp.getNext();
     }
@@ -214,9 +214,9 @@ public class LinkedList {
 
   public void reverse() {
 
-    Node temp = head;
-    head = tail;
-    tail = temp;
+    Node temp = first;
+    first = last;
+    last = temp;
     Node after = temp.getNext();
     Node before = null;
     for (int i = 0; i < size; i++) {
@@ -230,7 +230,7 @@ public class LinkedList {
   // Function to print the list in a proper way. Not to relevant.
   public void printList() {
 
-    Node temp = head;
+    Node temp = first;
 
     while (temp != null) {
 
