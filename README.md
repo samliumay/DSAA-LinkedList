@@ -1,22 +1,24 @@
-# DSAA - LinkedList 
-- DSAA = Data structures and Algorithms
-## Explanation of Time Complexity
-- Explains how Linked list works. 
-- Explains the complexity of the functions and how to calculate it. 
 
-# How to use/read and study?
-0- Wathch the video for complexity I uploaded to youtube (Will be here soon)
+# DSAA-LinkedList
+* DSAA = Data Structures and Algorithms 
 
-1- Enter the 'CTAL/src/main/java/Main.java'
+## Introduction 
+* As a data structures and algorithms fan, I wanted to create a lesson series for people who are trying to pass Data structres and Algorithms courses. The video explanations are at my superpeer. 
 
-2- Firslty run the code and observe the output.
+## What is included at this page and inside the codes? 
+* Basic explanation of how LinkedList works.
+* Complexitys of the functions like insert delete ext.
+* Explanations are integrated inside the codes. So by rewritting the code with comments, you will able to have at least a basic understanding of LinkedLists.
 
-3- Then look to the 'Node.java' and 'LinkedList.java'.
+## What do you explain at superpeer?
+* I explain all linkedlists from scratch. 
+* I write everythink by explaining one by one from scratch. 
+* You will have Turkish and English versions of the lessons. Depends to you which one you will choose. 
 
-4- Read all lines one by one with the detailed explanation. 
-
-
-
-NOTE-1: All the explanations and notes are integrated inside the code. So you can follow and learn just by reading the code. 
-
-NOTE-2: Feel free to give feedback to me. I want to improve myself. If you want you can also take me a coffe :) 
+## Run Locally
+```bash
+git clone https://github.com/samliumay/DSAA-LinkedList.git
+cd src/main/java/Main.java
+javac LinkedList.java Node.java Main.java
+java Main.java
+```
