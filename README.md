@@ -10,8 +10,8 @@
 * Explanations are integrated inside the codes. So by rewritting the code with comments, you will able to have at least a basic understanding of LinkedLists.
 
 ## What do you explain at superpeer?
-* I explain all linkedlists from scratch. 
-* I write everythink by explaining one by one from scratch. 
+* I will explain all linkedlists concepts from scratch. 
+* I will write everything by explaining one by one from scratch. 
 * You will have Turkish and English versions of the lessons. Depends to you which one you will choose. 
 
 ## Run Locally
