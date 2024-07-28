@@ -10,9 +10,9 @@
 * Explanations are integrated inside the codes. So by rewritting the code with comments, you will able to have at least a basic understanding of LinkedLists.
 
 ## What do you explain at superpeer?
-* I will explain all linkedlists concepts from scratch. 
-* I will write everything by explaining one by one from scratch. 
-* You will have Turkish and English versions of the lessons. Depends to you which one you will choose. 
+* Detailed explanation from scratch.
+* Questions and problems of LinkedList with their explanation.
+* Turkish and English version(s) of lessons.
 
 ## Run Locally
 ```bash
