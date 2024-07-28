@@ -6,7 +6,7 @@
 
 ## What is included at this page and inside the codes? 
 * Basic explanation of how LinkedList works.
-* Complexitys of the functions like insert delete ext.
+* Complexities of the LinkedList functions. 
 * Explanations are integrated inside the codes. So by rewritting the code with comments, you will able to have at least a basic understanding of LinkedLists.
 
 ## What do you explain at superpeer?
